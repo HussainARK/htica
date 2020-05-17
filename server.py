@@ -6,7 +6,7 @@ import socket, threading
 DISCONNECT_MESSAGE ="!DISCONNECT!"
 HEADER = 2048
 
-HOST = "127.0.0.1"
+HOST = ""
 PORT = 5050
 ADDR = (HOST, PORT)
 
