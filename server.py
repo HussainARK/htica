@@ -17,7 +17,11 @@ clients = set()
 clients_lock = threading.Lock()
 
 def handle_client(connection, address):
-    print(f"[SERVER] New Connection on: {address[0]}:{address[1]}")
+    if address[0] != "":
+        print(f"[SERVER] New Connection on: {address[0]}:{address[1]}")
+    else:
+        print(f"[SERVER] New Connection on: SERVER_IP_ADDRESS:{address[1]}")
+
     with clients_lock:
         clients.add(connection)
 

@@ -6,7 +6,7 @@ import socket, threading
 DISCONNECT_MESSAGE ="!DISCONNECT!"
 HEADER = 2048
 
-SERVER_HOST = '127.0.0.1'
+SERVER_HOST = '5.62.147.20' # socket.gethostbyname('3c9b5f55-fd2c-4cbd-885d-ffb7dcc82cd4.api.beta.kintohub.com/htica-server/')
 SERVER_PORT = 5050
 SERVER_ADDR = (SERVER_HOST, SERVER_PORT)
 
